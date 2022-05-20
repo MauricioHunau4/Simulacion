@@ -63,4 +63,4 @@ Por último se multiplica el resultado de lo anterior por la funcion matrizB (qu
 
 ## Loop
 
-...
+Luego se pide la introducción de un numero de loops para que se multipliquen 
