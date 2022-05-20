@@ -15,7 +15,7 @@ Luego te pide diferentes variables tal como:
  - dx : diferencial de posicion en el eje x
  - dt : diferencial de tiempo
  - a : constante que aparece en la ecuacion de difusividad
- - 
+
 Para sacar el numerador de la constante que aparece en la ecuacion de difusividad se necesita la siguiente ecuacion:
 
 La porosidad en fraccion multipiclado por la viscosidad en cP multiplicado por 10 elevado a la-3 multiplicado por la cmpresibilidad total por la diferencial de posicion en el eje x elevado al cuadrado, es decir:
@@ -27,13 +27,11 @@ la permeabilidad de la roca multiplicado por 9.87 por 10 elevado a la -16 multip
 
 perm * 9.87*10^-16 * dt * 6894.75729
 
-a = phi * mu*10^-3 * ct * dx^2
-    --------------------------
-    perm * 9.87*10^-16 * dt * 6894.75729
+a = phi * mu*10^-3 * ct * dx^2 / perm * 9.87*10^-16 * dt * 6894.75729
     
 ## Matriz tridiagonal
 
-Una vez que las variables ya estan colocadas, se llama a una funcion con los parametros n y m (filas y columnas, respectivamente) que ya hemos colocado anteriormente y se crea una matriz tridiagonal automaticamente.
+Una vez que las variables ya estan colocadas, se llama a la funcion creaMatriz con los parametros n y m (filas y columnas, respectivamente) que ya hemos colocado anteriormente y se crea una matriz tridiagonal automaticamente.
 Una Matriz tridiagonal en álgebra lineal es una matriz cuyos elementos son solo distintos de cero en la diagonal principal y las diagonales adyacentes por encima y por debajo de esta.
 
 Por ejemplo
@@ -44,15 +42,25 @@ El resultado de la matriz se muestra por consola. Y se llama a otra funcion en l
 
 ## Matriz A
 
-La matriz A es creada por la funcion matrizA con los parametros m, n y a
+La matriz A es creada por la funcion matrizA con los parametros m, n y a (columnas, filas y la constante que aparece en la ecuacion de difusividad, respectivamente), la cual se crea automaticamente y aparece en consola una vez hecha.
+
 ## Matriz B 
 
-Esta matriz es creada por la funcion matrizB la cual tiene los parametros BHP, PI y n, estas variables son:
+Esta matriz es creada por la funcion matrizB la cual tiene los parametros BHP, PI y n (n de filas), estas variables son:
  - BHP: Bottom hole pressure o la presión del fondo del pozo.
  - PI: Presión inicial en la formación
 
 Para calcular el BHP primero se tiene que introducir el MBHP (Mega bottom hole pressure, la presion original divida a 10 elevado a la 6), y ahi se multipica el MBHP por 10 elevado a la 6 o MBHP * 10^6 y se obtiene el BHP.
 
 Y para calcular la presión inicial se precisa el MPI (Mega presión inicial) que se introduce por comando, y multiplicando esta variable por 10 elevado a la 6 se obtiene PI.
+Luego se crea automaticamente y aparece en consola una vez hecha.
 
+## Multiplicaciones de matrices
 
+Aca es donde se llama a la funcion invertirMatriz con el parametro crearMatriz (funcion que crea la matriz tridiagonal) y despues se multiplica con la matrizA (funcion que crea la matriz A) con sus respectivos parametros, esto se hace para ... .
+
+Por último se multiplica el resultado de lo anterior por la funcion matrizB (que devuelve la matriz B), para ... .
+
+## Loop
+
+...
