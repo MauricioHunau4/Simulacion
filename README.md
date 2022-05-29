@@ -88,10 +88,6 @@ Luego se crea automaticamente y aparece en consola una vez hecha.
 
 ## Multiplicaciones de matrices
 
-Aca es donde se llama a la funcion invertirMatriz con el parametro crearMatriz (funcion que crea la matriz tridiagonal) y despues se multiplica con la matrizA (funcion que crea la matriz A) con sus respectivos parametros, esto se hace para ... .
+Aca es donde se llama a la funcion invertirMatriz con el parametro crearMatriz (funcion que crea la matriz tridiagonal) y despues se multiplica con la matrizA (funcion que crea la matriz A) con sus respectivos parametros.
 
-Por último se multiplica el resultado de lo anterior por la funcion matrizB (que devuelve la matriz B), para ... .
-
-## Loop
-
-Luego se pide la introducción de un numero de loops para que se multipliquen 
+Por último se multiplica el resultado de lo anterior por la funcion matrizB (que devuelve la matriz B).
