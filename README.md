@@ -15,6 +15,12 @@ Luego te pide diferentes variables tal como:
  - dx : diferencial de posicion en el eje x
  - dt : diferencial de tiempo
  - a : constante que aparece en la ecuacion de difusividad
+ - 
+Ecuación de difusividad (con varias suposiciones):
+∂^2 p/∂x^2 *k/ϕ*μ*ct=∂p/∂t
+
+Utilizando la ecuación vista, y aplicando los operadores para el método implícito:
+pi+1n+1-2*pin+1+pi-1n+1∆x2 *kϕ*μ*ct=pin+1-pin∆t
 
 Para sacar el numerador de la constante que aparece en la ecuacion de difusividad se necesita la siguiente ecuacion:
 
