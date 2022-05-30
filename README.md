@@ -1,4 +1,4 @@
-# Simulacion de matriz
+# Simulación de la variación de presión en un reservorio  1D
 
 Simulación hecha con python y numpy para calcular la presión con el método implícito usando la ecuación de difusividad con ciertas suposiciones.
 
