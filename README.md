@@ -39,6 +39,7 @@ Utilizando la ecuación vista, y aplicando los operadores para el método implí
 ![ecuasion de difusividad2](https://user-images.githubusercontent.com/69403501/170887662-a4f42b79-e3b4-43bc-a158-2a539901bae3.png)
 
 Despejando 
+
 ![Captura de pantalla 2022-05-29 161025](https://user-images.githubusercontent.com/69403501/170887684-b28d806c-3fd7-4f77-a185-f976ee9bdb74.png)
 
 ![Captura3](https://user-images.githubusercontent.com/69403501/170887691-dcbcd7a2-0598-465b-9970-92502099322f.png)
@@ -46,9 +47,11 @@ Despejando
 Tomando como condición de contorno un lado de presión constante y uno de caudal nulo:
 
 -Presión constante: 
+
 ![Captura4](https://user-images.githubusercontent.com/69403501/170887725-be2f1d17-02ad-4cc5-ab47-006553493720.png)
 
 -Caudal nulo: 
+
 ![Captura5](https://user-images.githubusercontent.com/69403501/170887737-272cd9b6-1655-4eec-80b7-f95b636bcd19.png)
 
 Aplicando las condiciones en la discretización:
