@@ -15,7 +15,7 @@ Luego te pide diferentes variables tal como:
  - dx : diferencial de posicion en el eje x
  - dt : diferencial de tiempo
  - a : constante que aparece en la ecuacion de difusividad
- - 
+   
 Ecuación de difusividad (con varias suposiciones):
 
 ![ecuasion de difusividad](https://user-images.githubusercontent.com/69403501/170887661-ef7a2b73-55c5-49a5-8b92-43621907e9bb.png)
